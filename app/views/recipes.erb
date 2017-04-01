@@ -1,0 +1,7 @@
+<% if !@recipes.blank? %>
+  <% for item in @recipes %>
+    <h4><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></h4>
+  <% end %>
+<% else %>
+  <h2>There are no recipes yet</h2>
+<% end %>
